@@ -15,4 +15,4 @@ twilio integration for irc
 
 `!<room> <message>` send a message to a specific room. you must have already registered with this room.
 
-`!stop <room>` no longer receive texts from <room>.  If <room> is blank, all notifications will stop.
+`!stop <room>` no longer receive texts from a room.  If the room is blank, all notifications will stop.
