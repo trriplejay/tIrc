@@ -1,5 +1,6 @@
-FROM shippableimages/ubuntu1404_nodejs:latest
-ADD . /source/tIrc
-RUN cd /source/tIrc && npm install
-EXPOSE 3000
-CMD ["node", "/source/tIrc/index.js"]
+FROM shipimg/appbase:latest
+ADD . /home/proj/tircapi
+RUN cd /home/proj/tircapi && npm install
+ENTRYPOINT ["/home/proj/tircapi/boot_tirc.sh"]
+EXPOSE 60000
+
